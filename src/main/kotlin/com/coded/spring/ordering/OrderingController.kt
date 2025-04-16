@@ -1,4 +1,4 @@
-package com.example.onlineOrdering
+package com.coded.spring.ordering
 
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
