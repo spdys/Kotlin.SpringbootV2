@@ -1,59 +1,42 @@
+### project navi/info
 
-# Coded Academy: Student Submission Guidelines
+`src/main/kotlin/com.coded.spring.ordering` is where all the packages are
 
-## Online Ordering Server
+`controller` → `service` (→ `dtos`) → `repository` → `entity`
 
-## Getting Started
+`controller` = entry point for http requests (receive requests, process data, determine response)
+- `GET`: retrieve data from a server
+- `POST`: send data to the server to create a new resource
+- `PUT`: update or replace an existing resource
+- `DELETE`: remove a resource from the server
 
-### 1. Fork the Repository
+`service` = business logic (processes data, makes decisions, eg: save order)
 
-1. Click the "Fork" button at the top right of this repository.
-2. This will create a copy of the repository in your personal GitHub account.
+`repository` = database operations (handles communication with db: save, find, delete)
 
-### 2. Clone Your Forked Repository
+`entity` = domain model (defines what your data is in the system: fields, relationships)
 
-### 3. Complete Your Assignment
+`dto` = data transfer object (cleans request/response json bodies, to avoid returning entities)
 
-### 4. Commit Your Changes (Include Task Name in the comment)
+### services
+- register user (username & password)
+- list accounts
+- create new/multiple accounts
+- close account
+- transfer money to other account
+- get user kyc info
+- create or update kyc info
 
-Example: "Online Ordering - Post an Order"
-
-### 5. Push Your Branch to Your Fork
-
-
-### 6. Submit a Pull Request (PR)
-
-
-## Best Practices
-
-- Write clean, readable code
-- Include comments explaining your logic
-- Test your code thoroughly
-- Follow the coding standards provided in class
-
-
-
-## Submission Checklist
-
-- [ ] Forked the repository
-- [ ] Completed all assignment requirements
-- [ ] Committed changes with descriptive messages
-- [ ] Pushed branch to your fork
-- [ ] Submitted a pull request
-
-## Need Help?
-
-If you encounter any issues or have questions:
-- Check the course materials
-- Consult the documentation
-- Ask your instructor or teaching assistants
-
-## Code of Conduct
-
-- Be respectful
-- Collaborate professionally
-- Maintain academic integrity
-
----
-
-Happy Coding! 🚀👩‍💻👨‍💻
+### progress
+- #### ultimate goal is to catch up!!!!
+- [x] exercise 1: welcome (bonus done)
+- [x] exercise 2: endpoint to `POST` order
+  - [ ] do bonus
+    - tried and failed because i didn't know about dtos yet
+- [X] exercise 3: create + connect db
+  - [ ] do bonus
+    - might have to delete and remake dbs?
+    - im not good at altering tables ;-;
+- [ ] exercise 4: user authentication
+- [ ] exercise 5: user profiles
+- [ ] exercise 6: unit testing

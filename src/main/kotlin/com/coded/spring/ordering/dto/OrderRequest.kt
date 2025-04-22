@@ -1,4 +1,8 @@
 package com.coded.spring.ordering.dto
 
-class OrderRequest {
-}
+data class OrderRequest(
+    val id: Long,
+    val userId: Long,
+    val restaurant: String,
+    val items: List<String>
+)
