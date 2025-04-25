@@ -19,13 +19,9 @@
 `dto` = data transfer object (cleans request/response json bodies, to avoid returning entities)
 
 ### services
-- register user (username & password)
-- list accounts
-- create new/multiple accounts
-- close account
-- transfer money to other account
-- get user kyc info
-- create or update kyc info
+- welcome page
+- list all orders
+- create new order
 
 ### progress
 - #### ultimate goal is to catch up!!!!
