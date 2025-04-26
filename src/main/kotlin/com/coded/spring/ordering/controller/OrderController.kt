@@ -13,9 +13,8 @@ class OrderController(val orderService: OrderService) {
 
 
     @GetMapping("/order")
-    fun getAll(): Map<String, List<OrderEntity>> {
-        val orders = orderService.getAllOrders()
-        return mapOf("orders" to orders)
+    fun getAll(): List<OrderEntity> {
+        return orderService.getAllOrders()
     }
 
     @PostMapping("/order")

@@ -24,15 +24,13 @@
 - create new order
 
 ### progress
-- #### ultimate goal is to catch up!!!!
-- [x] exercise 1: welcome (bonus done)
+#### ultimate goal is to catch up!!!!
+- [x] exercise 1: welcome
+  - [x] bonus: checked with `curl` command
 - [x] exercise 2: endpoint to `POST` order
-  - [ ] do bonus
-    - tried and failed because i didn't know about dtos yet
+  - [x] bonus: add `createdAt` column and sort
 - [X] exercise 3: create + connect db
-  - [ ] do bonus
-    - might have to delete and remake dbs?
-    - im not good at altering tables ;-;
+  - [x] bonus: create `items` table and connect it to `orders`
 - [ ] exercise 4: user authentication
 - [ ] exercise 5: user profiles
 - [ ] exercise 6: unit testing
