@@ -2,7 +2,7 @@
 
 `src/main/kotlin/com.coded.spring.ordering` is where all the packages are
 
-`controller` → `service` (→ `dtos`) → `repository` → `entity`
+`dtos` ←→ `controller` → `service` → `repository` → `entity`
 
 `controller` = entry point for http requests (receive requests, process data, determine response)
 - `GET`: retrieve data from a server
