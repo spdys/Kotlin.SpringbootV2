@@ -32,5 +32,8 @@
 - [X] exercise 3: create + connect db
   - [x] bonus: create `items` table and connect it to `orders`
 - [ ] exercise 4: user authentication
+  - [ ] bonus: 
 - [ ] exercise 5: user profiles
+  - [ ] bonus:
 - [ ] exercise 6: unit testing
+  - [ ] bonus:
