@@ -31,9 +31,20 @@
   - [x] bonus: add `createdAt` column and sort
 - [X] exercise 3: create + connect db
   - [x] bonus: create `items` table and connect it to `orders`
-- [ ] exercise 4: user authentication
-  - [ ] bonus: 
+- [x] exercise 4: user authentication
+  - [ ] bonus: password validation so people can't create a weak password 
+    - longer than or equal to 6 letters
+    - at least 1 capital letter
+    - at least 1 number
 - [ ] exercise 5: user profiles
-  - [ ] bonus:
+  - [ ] bonus: 
 - [ ] exercise 6: unit testing
-  - [ ] bonus:
+  - [ ] bonus: 
+- [ ] exercise 7: menu endpoint
+  - [ ] bonus: 
+- [ ] exercise 8: configuration
+  - [ ] bonus: 
+- [ ] exercise 9: setup swagger
+  - [ ] bonus: 
+- [ ] exercise 10: refactor to micro services
+  - [ ] bonus: 
