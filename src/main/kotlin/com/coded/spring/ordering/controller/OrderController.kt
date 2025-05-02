@@ -26,13 +26,7 @@ class OrderController(val orderService: OrderService) {
     }
 
     @PostMapping("/order")
-    fun saveOrder(@RequestBody request: OrderRequest): ResponseEntity<*> {
-        return try {
-            ResponseEntity.ok().body(orderService.createOrder(request))
-        }  catch (e: OrderException) {
-            ResponseEntity.badRequest().body(
-                FailureResponse(e.message ?: "Couldn't create order.")
-            )
-        }
+    fun saveOrder(@RequestBody request: OrderRequest): String {
+        return orderService.createOrder(request)
     }
 }
