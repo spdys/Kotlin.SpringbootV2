@@ -2,6 +2,7 @@ package com.coded.spring.ordering.service
 
 import com.coded.spring.ordering.UserIdNotFound
 import com.coded.spring.ordering.InvalidPasswordException
+import com.coded.spring.ordering.UsernameAlreadyExistsException
 import com.coded.spring.ordering.dto.AuthenticationRequest
 import com.coded.spring.ordering.dto.OrderRequest
 import com.coded.spring.ordering.entity.ItemEntity
@@ -23,6 +24,8 @@ class OrderService(
 ) {
 
     fun registerUser(request: AuthenticationRequest) {
+        if (userRepository.findByUsername(request.username) != null)
+            throw UsernameAlreadyExistsException()
         if (request.password.length < 6)
             throw InvalidPasswordException("Password must be at least 6 characters long.")
         if (!request.password.any { it.isUpperCase() })

@@ -32,10 +32,7 @@
 - [X] exercise 3: create + connect db
   - [x] bonus: create `items` table and connect it to `orders`
 - [x] exercise 4: user authentication
-  - [ ] bonus: password validation so people can't create a weak password 
-    - longer than or equal to 6 letters
-    - at least 1 capital letter
-    - at least 1 number
+  - [x] bonus: password validation so people can't create a weak password
 - [ ] exercise 5: user profiles
   - [ ] bonus: 
 - [ ] exercise 6: unit testing
