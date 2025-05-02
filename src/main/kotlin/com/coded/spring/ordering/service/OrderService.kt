@@ -1,6 +1,7 @@
 package com.coded.spring.ordering.service
 
 import com.coded.spring.ordering.UserIdNotFound
+import com.coded.spring.ordering.InvalidPasswordException
 import com.coded.spring.ordering.dto.AuthenticationRequest
 import com.coded.spring.ordering.dto.OrderRequest
 import com.coded.spring.ordering.entity.ItemEntity
@@ -22,11 +23,19 @@ class OrderService(
 ) {
 
     fun registerUser(request: AuthenticationRequest) {
+        if (request.password.length < 6)
+            throw InvalidPasswordException("Password must be at least 6 characters long.")
+        if (!request.password.any { it.isUpperCase() })
+            throw InvalidPasswordException("Password must contain at least one uppercase letter.")
+        if (!request.password.any { it.isDigit() })
+            throw InvalidPasswordException("Password must contain at least one number.")
+
         val user = UserEntity(
             0,
             request.username,
             passwordEncoder.encode(request.password)
         )
+
         userRepository.save(user)
     }
 
